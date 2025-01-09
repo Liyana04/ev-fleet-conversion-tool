@@ -50,7 +50,18 @@ body{
     text-decoration: underline;
 }
 
+#tco-box{
+    background-color: #666;
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+}
 
+.graph-box{
+    border: 1px solid #666;
+    border-radius: 8px;
+    padding: 12px;
+}
   
 
 .dropdown-container {
