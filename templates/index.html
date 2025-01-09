@@ -15,31 +15,22 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
+
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 </head>
 <body>
 
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1"><h2>TCO tool</h2><small> [Beta version]</small></span>
+      <span class="navbar-brand mb-0 h1 text-primary">TCO tool<small> [Beta version]</small></span>
     </div>
   </nav>
 
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Dropdown button
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
-  </div>
     <div class="container">
-        <!-- form here -->
-         Annual driving distance
-         10000 km/year
-         slider here
+        <label for="customRange1" class="form-label">Annual driving distance</label>
+        <input type="range" class="form-range" id="customRange1"> 10000 km/year
 
          <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,12 +44,54 @@
           </div>
 
 
-         Fuel-powertrain (i)
+         
+         <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Fuel-powertrain 
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Medium car</a></li>
+              <li><a class="dropdown-item" href="#">Sport car</a></li>
+              <li><a class="dropdown-item" href="#">Sedan car</a></li>
+            </ul>
+          </div><i class="ri-information-line text-primary"  data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
+       
+          <div class="dropdown-container">
+            <label for="vehicleSelect" class="dropdown-label">Vehicle 1</label>
+            <select id="vehicleSelect" class="dropdown-select">
+              <option value="petrol">Battery electric</option>
+              <option value="diesel">Battery electric 2</option>
+              <option value="electric">Battery electric 3</option>
+            </select>
+          </div>
 
-         Vehicle 1 dropdown here                Vehicle 2 dropdown here
-         Battery electric                        Petrol
+          <!-- <div class="dropdown-box">
 
-         Purchase cost (i)
+          </div> -->
+          <div class="dropdown-container">
+            <label for="vehicleSelect" class="dropdown-label">Vehicle 2</label>
+            <select id="vehicleSelect" class="dropdown-select">
+              <option value="petrol">Petrol</option>
+              <option value="diesel">Diesel</option>
+              <option value="electric">Electric</option>
+            </select>
+          </div>
+
+          <div class="">
+            Purchase cost <i class="ri-information-line text-primary"  data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
+          </div>
+
+          <div class="left-column">
+            <small class="title">Battery electric</small>
+            <label>Total vehicle cost</label>
+            <input type="text" placeholder="RM1234567">
+          </div>
+          <div class="right-column">
+            <small class="title">Petrol</small>
+            <label>Total vehicle cost</label>
+            <input type="text" placeholder="RM1234567">
+          </div>
+          
 
          Battery electric                   Petrol 
          Total vehicle cost 14490 usd       Total vehicle cost 8844 usd

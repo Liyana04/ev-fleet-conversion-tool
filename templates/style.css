@@ -23,3 +23,59 @@ body{
     margin: auto;
     padding: 12px 30px;
 } */
+
+.dropdown-box{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.title{
+    color: #666;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+  
+
+.dropdown-container {
+    display: inline-block;
+    border: 1px solid #ccc; /* Border around the dropdown */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px;
+    width: 200px; /* Adjust width as needed */
+    font-family: Arial, sans-serif;
+  }
+  
+  .dropdown-label {
+    display: block;
+    font-size: 14px;
+    color: #666; /* Light grey for the label */
+    margin-bottom: 5px;
+  }
+  
+  .dropdown-select {
+    width: 100%; /* Full width of the container */
+    border: none; /* Remove border of the select */
+    font-weight: bold; /* Bold for selected text */
+    color: black; /* Text color */
+    background: none; /* Transparent background */
+    appearance: none; /* Remove default dropdown styles */
+    outline: none; /* Remove focus outline */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .dropdown-select:focus {
+    outline: 2px solid #007bff; /* Add focus style */
+  }
+  
+  .dropdown-container::after {
+    content: '▼'; /* Down arrow */
+    position: absolute;
+    right: 15px; /* Adjust to align with the dropdown */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent interaction */
+    color: #666; /* Light grey for arrow */
+  }
