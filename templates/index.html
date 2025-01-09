@@ -33,50 +33,20 @@
         <label for="customRange1" class="form-label">Annual driving distance</label>
         <input type="range" class="form-range" id="customRange1"> 10000 km/year
 
-         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Vehicle Type
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Medium car</a></li>
-              <li><a class="dropdown-item" href="#">Sport car</a></li>
-              <li><a class="dropdown-item" href="#">Sedan car</a></li>
-            </ul>
-          </div>
+        <div class="dropdown-box">
+          Vehicle Type <i class="ri-arrow-down-s-fill"></i>
+        </div>
 
-
-         
-         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Fuel-powertrain 
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Medium car</a></li>
-              <li><a class="dropdown-item" href="#">Sport car</a></li>
-              <li><a class="dropdown-item" href="#">Sedan car</a></li>
-            </ul>
-          </div><i class="ri-information-line text-primary"  data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
-       
-          <div class="dropdown-container">
-            <label for="vehicleSelect" class="dropdown-label">Vehicle 1</label>
-            <select id="vehicleSelect" class="dropdown-select">
-              <option value="petrol">Battery electric</option>
-              <option value="diesel">Battery electric 2</option>
-              <option value="electric">Battery electric 3</option>
-            </select>
-          </div>
-
-          <!-- <div class="dropdown-box">
-
-          </div> -->
-          <div class="dropdown-container">
-            <label for="vehicleSelect" class="dropdown-label">Vehicle 2</label>
-            <select id="vehicleSelect" class="dropdown-select">
-              <option value="petrol">Petrol</option>
-              <option value="diesel">Diesel</option>
-              <option value="electric">Electric</option>
-            </select>
-          </div>
+        <div class="">
+          Fuel-powertrain <i class="ri-information-line text-primary"  data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
+        </div>
+               
+        <div class="dropdown-box">
+          Vehicle 1 <i class="ri-arrow-down-s-fill"></i>
+        </div>
+        <div class="dropdown-box">
+          Vehicle 2 <i class="ri-arrow-down-s-fill"></i>
+        </div>
 
           <!-- purchase cost -->
           <div class="">
@@ -226,6 +196,14 @@
           <!-- right column screen -->
           <div id="tco-box">
             Estimated cost of ownership box
+            <hr>
+            <small>Battery electric TCO</small>
+            RM 150/km
+            RM 100/year
+
+            <small>Petrol TCO</small>
+            RM 107/km
+            RM 1000/year
           </div>
 
           <div>
