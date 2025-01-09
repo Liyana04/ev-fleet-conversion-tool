@@ -22,9 +22,10 @@
 </head>
 <body>
 
-  <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1 text-primary">TCO tool<small> [Beta version]</small></span>
+  <nav class="navbar"> 
+    <div class="container">
+      <div class="logo">TCO tool </div>
+      <div id="beta-logo">Beta version</div>
     </div>
   </nav>
 
@@ -77,67 +78,150 @@
             </select>
           </div>
 
+          <!-- purchase cost -->
           <div class="">
             Purchase cost <i class="ri-information-line text-primary"  data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
           </div>
 
           <div class="left-column">
             <small class="title">Battery electric</small>
-            <label>Total vehicle cost</label>
-            <input type="text" placeholder="RM1234567">
+
+            <div>
+              <label>Total vehicle cost</label>
+              <input type="text" placeholder="RM1234567">
+            </div>
+            
+            <div>
+              <label>Vehicle cost before taxes</label>
+              <input type="text" placeholder="RM1234567">
+            </div>
+
+            <div>
+              <label>Import tax</label>
+              <input type="range" class="form-range" id="customRange1"> 0%
+            </div>
+
+            <div>
+              <label>Registration tax</label>
+              <input type="range" class="form-range" id="customRange1"> 5%
+            </div>
+
+            <div>
+              <label>CO<sub>2</sub> and other taxes</label>
+              <input type="range" class="form-range" id="customRange1"> 5%
+            </div>
+
+            <div>
+              <label>Residual value</label>
+              <input type="range" class="form-range" id="customRange1"> RM1500
+            </div>
+
+            <div>
+              <label>Home charging installation</label>
+              <input type="range" class="form-range" id="customRange1"> RM 120
+            </div>
           </div>
+
           <div class="right-column">
             <small class="title">Petrol</small>
-            <label>Total vehicle cost</label>
-            <input type="text" placeholder="RM1234567">
+
+            <div>
+              <label>Total vehicle cost</label>
+              <input type="text" placeholder="RM1234567">
+            </div>
+            
+            <div>
+              <label>Vehicle cost before taxes</label>
+              <input type="text" placeholder="RM1234567">
+            </div>
+
+            <div>
+              <label>Import tax</label>
+              <input type="range" class="form-range" id="customRange1"> 0%
+            </div>
+
+            <div>
+              <label>Registration tax</label>
+              <input type="range" class="form-range" id="customRange1"> 5%
+            </div>
+
+            <div>
+              <label>CO<sub>2</sub> and other taxes</label>
+              <input type="range" class="form-range" id="customRange1"> 5%
+            </div>
+
+            <div>
+              <label>Residual value</label>
+              <input type="range" class="form-range" id="customRange1"> RM1500
+            </div>
+            
           </div>
           
+          <!-- Operating cost here -->
+          <div class="">
+            Operating costs <i class="ri-information-line text-primary"  data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
+          </div>
 
-         Battery electric                   Petrol 
-         Total vehicle cost 14490 usd       Total vehicle cost 8844 usd
+          
+          <div class="left-column">
+            <small class="title">Battery electric</small>
 
-         Vehicle cost (before taxes)        Vehicle cost (before taxes)
-         1849384 usd     slider here                   34343 usd
-
-         Import tax
-         0% slider here
-
-         Registration tax
-         5% slider here
-
-         co2 and other taxes
-         0% slider here
-
-         Residual value
-         1400 usd slider here
-
-         Home charging installation
-         0 usd slider here
-
-
-         Operating cost (i)
-
-         Battery electric
-         Annual registration fee
-         100 usd slider here
-
-         Insurance per year
-         500 usd slider here
-
-         Maintennace per year
-         100 usd slider here
-
-         Electric fuel efficiency
-         14,00 kWh/100km slider here
-         <div class="row">
-            box1
-            <div class="col">
-                next box 1
+            <div>
+              <label>Annual registration fee</label>
+              <input type="range" class="form-range" id="customRange1"> RM150
             </div>
-         </div>
-         <div class="row">
-            box2
-         </div>
+            
+            <div>
+              <label>Roadtax</label>
+              <input type="text" placeholder="RM167">
+            </div>
+
+            <div>
+              <label>Insurance per year</label>
+              <input type="range" class="form-range" id="customRange1"> RM 500
+            </div>
+
+            <div>
+              <label>Maintennace per year</label>
+              <input type="range" class="form-range" id="customRange1"> RM 50
+            </div>
+
+            <div>
+              <label>Electricity fuel efficiency</label>
+              <input type="range" class="form-range" id="customRange1"> 14.00kWh/100km
+            </div>
+
+          </div>
+
+          <div class="right-column">
+            <small class="title">Petrol</small>
+
+            <div>
+              <label>Annual registration fee</label>
+              <input type="range" class="form-range" id="customRange1"> RM150
+            </div>
+            
+            <div>
+              <label>Roadtax</label>
+              <input type="text" placeholder="RM167">
+            </div>
+
+            <div>
+              <label>Insurance per year</label>
+              <input type="range" class="form-range" id="customRange1"> RM 50
+            </div>
+
+            <div>
+              <label>Maintennace per year</label>
+              <input type="range" class="form-range" id="customRange1"> RM 500
+            </div>
+
+            <div>
+              <label>Fuel efficiency</label>
+              <input type="range" class="form-range" id="customRange1"> 6.50L/100km
+            </div>
+            
+          </div>
     </div>
 </body>
 </html>

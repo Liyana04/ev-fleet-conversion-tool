@@ -24,6 +24,20 @@ body{
     padding: 12px 30px;
 } */
 
+.navbar{
+    background-color: #ccc;
+    color: #fff;
+    font-size: 20px;
+}
+
+#beta-logo{
+    color: red;
+    font-size: 12px;
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 4px;
+}
+
 .dropdown-box{
     border: 1px solid #ccc;
     border-radius: 8px;
