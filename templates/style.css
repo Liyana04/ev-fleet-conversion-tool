@@ -17,12 +17,11 @@ body{
     color:black;
 }
 
-/* .container{
-    display: flex;
+.container{
     max-width: 1100px;
     margin: auto;
     padding: 12px 30px;
-} */
+}
 
 .navbar{
     background-color: #ccc;
@@ -39,6 +38,10 @@ body{
     border: 1px solid red;
     border-radius: 8px;
     padding: 4px;
+}
+
+.box{
+    display:flex;
 }
 
 .dropdown-box{
