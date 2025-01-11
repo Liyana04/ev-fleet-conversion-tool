@@ -1,3 +1,4 @@
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,8 +18,8 @@
   />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="{% static 'style/style.css' %}" />
+    <script src="{% static 'script.js' %}"></script>
 </head>
 <body>
 
@@ -32,12 +33,15 @@
       <div class="container">
         <div class="box-left">
           <h1>Electric Vehicle Fleet Conversion Tool</h1>
-          <p>Designed to help organizations evaluate the 
-            feasibility and benefits of transitioning their vehicle fleets
-             from traditional internal combustion engines to electric vehicles(EVs)
+          <p>An 
+            interactive and intelligent web-based tool that can help 
+            vehicle fleet management in assessing the total cost of 
+            ownership (TCO) and carbon emission reductions when 
+            transitioning from internal combustion engine vehicle 
+            (ICEV) to an electric vehicle (EV) in Malaysia setting. 
           </p>
+          <button class="button">Start here!</button>
         </div>
-        <img src="./images/grid.JPG" alt="">
       </div>
   </header>
 
@@ -65,6 +69,7 @@
               </div>
             </div>
           </div>
+          <hr>
           <div id="purchase-cost"><!-- purchase cost -->
              <div >
               Purchase cost <i class="ri-information-line text-primary"  data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
@@ -146,6 +151,7 @@
               </div>
             </div>
           </div>
+          <hr>
           <div id="operating-cost">
               <!-- Operating cost here -->
             <div class="">
@@ -252,7 +258,7 @@
               </div>
             </div>
     
-            <div>
+            <div id="cumulative">
               Cumulative annual owning and operational costs
               <div class="graph-box">
                 graph here Lorem ipsum dolor sit amet consectetur adipi
@@ -276,6 +282,10 @@
                 cere corrupti adipisci rerum, aperiam ratione cupiditate?
                  Doloremque aliquam libero aut nesciunt iste delectus adipisci dolorum.
               </div>
+            </div>
+
+            <div id="breakdown" style="display:none">
+              breakdown TCO kjksdj
             </div>
           </div>
         </div>
