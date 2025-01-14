@@ -62,12 +62,12 @@
     -webkit-backdrop-filter: blur(5px);
     /* transparent is here*/
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 10;
     /* align-items: center; */
-    /* padding: 12px 0; */
+    padding: 0 12em;
 }
 
 #navbar>#logo{
@@ -109,38 +109,3 @@
     padding: 4px;
 }
 
-/* breakpoints */
-@media (max-width: 992px) {
-    .header{
-        padding: 1.2rem 4%;
-    }
-}
-
-@media (max-width: 768px) {
-    #menu-icon{
-        display: block;
-    }
-
-    #navbar{
-        position: fixed;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: .5rem 4%;
-        background: rgba(255, 255, 255, .1);
-        border-bottom: 2px solid rgba(255, 255, 255, .2);
-        backdrop-filter: blur(5px);
-
-        display: none;
-    }
-
-    .navbar a{
-        display: block;
-        margin: 1.5rem 0;
-    }
-
-    #navbar a{
-        display: block;
-        margin: 1.5rem 0;
-    }
-}
