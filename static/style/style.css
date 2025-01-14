@@ -1,111 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.header{
-    /* background-color: #ccc; */
-    background: rgba(0, 0, 0, 0.7); /* Black overlay with 50% opacity */
-    background-image: url("/static/video/car-bg.gif");
-    background-blend-mode: darken;
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-    color: white;
-    /* min-height: 400px; */
-    height: 100vh;
+.header {
+  background: rgba(0, 0, 0, 0.7);
+  background-image: url("/static/video/car-bg.gif");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
 }
 
-.header p{
-    line-height: 1.5;
-    letter-spacing: 1.5;
-    padding-bottom: 2rem;
+.header #main-header{
+    margin-top: 10rem;
 }
 
-.header #button-header{
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
+.header p {
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  padding-bottom: 2rem;
 }
 
-.header #button-header:hover{
-     /* transparent is here*/
-     background: rgba(255, 255, 255, 0.2);
-     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-     backdrop-filter: blur(5px);
-     -webkit-backdrop-filter: blur(5px);
-     /* transparent is here*/
-
-    cursor: pointer;
-    z-index: 1;
-    transition: background-color 0.5s ease, transform 0.5s ease; /* Smooth transition */
+.header #button-header {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
-.header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem;
+.header #button-header:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
-#navbar{
-    /* transparent is here*/
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    border-bottom: 2px solid rgba(255, 255, 255, .2);
-    -webkit-backdrop-filter: blur(5px);
-    /* transparent is here*/
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    /* align-items: center; */
-    padding: 0 12em;
+.header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
 }
 
-#navbar>#logo{
-    font-size: 28px;
+#navbar {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
 }
 
-#navbar ul{
-    list-style-type: none;
-    display: flex;
-    margin-top: 12px;
+#navbar #logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-#navbar li{
-    margin-left: 12px;
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-#navbar a{
-    text-decoration: none;
-    color: #fff;
-    transition: .3s;
+#navbar li {
+  display: inline-block;
 }
 
-#navbar a:hover{
-    color: #007bff;
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
-#menu-icon{
-    font-size: 36px;
-    color: #fff;
+#navbar a:hover {
+  color: #007bff;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  #navbar ul {
     display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  #navbar ul.active {
+    display: flex;
+    
+    }
+
+  #navbar li {
+    margin: 0;
+  }
+
+  #navbar a {
+    font-size: 1.2rem;
+  }
 }
 
-#beta-logo{
-    color: red;
-    font-size: 16px;
-    /* background-color: red; */
-    border: 1px solid red;
-    border-radius: 8px;
-    padding: 4px;
-}
+@media screen and (max-width: 480px) {
+  #navbar #logo {
+    font-size: 1.2rem;
+  }
 
+  #navbar a {
+    font-size: 1rem;
+  }
+}
