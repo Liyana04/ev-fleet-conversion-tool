@@ -12,7 +12,7 @@
     background-image: url("/static/video/car-bg.gif");
     background-blend-mode: darken;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: none;
     color: white;
     /* min-height: 400px; */
@@ -25,13 +25,25 @@
     padding-bottom: 2rem;
 }
 
-.header button{
+.header #button-header{
     padding: 8px;
     border-radius: 8px;
     border: none;
     background-color: #007bff;
     color: #fff;
-    /* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.header #button-header:hover{
+     /* transparent is here*/
+     background: rgba(255, 255, 255, 0.2);
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(5px);
+     -webkit-backdrop-filter: blur(5px);
+     /* transparent is here*/
+
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Smooth transition */
 }
 
 .header .container{
@@ -39,134 +51,96 @@
     align-items: center;
     justify-content: space-between;
     padding: 5rem;
-    
 }
 
-h2{
-    font-size: 20px;
-}
-
-body{
-    font-family: 'Poppins',sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    color:black;
-}
-
-.container{
-    max-width: 1100px;
-    margin: auto;
-    padding: 12px 30px;
-}
-
-.navbar{
-    background-color: #fff;
-    color: #000;
-    font-size: 25px;
+#navbar{
+    /* transparent is here*/
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    -webkit-backdrop-filter: blur(5px);
+    /* transparent is here*/
+    display: flex;
+    justify-content: space-around;
     position: sticky;
     top: 0;
-    overflow: hidden;
-    /* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); */
+    z-index: 10;
+    /* align-items: center; */
+    /* padding: 12px 0; */
+}
+
+#navbar>#logo{
+    font-size: 28px;
+}
+
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 12px;
+}
+
+#navbar li{
+    margin-left: 12px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+
+#navbar a:hover{
+    color: #007bff;
+}
+
+#menu-icon{
+    font-size: 36px;
+    color: #fff;
+    display: none;
 }
 
 #beta-logo{
     color: red;
-    font-size: 15px;
+    font-size: 16px;
     /* background-color: red; */
     border: 1px solid red;
     border-radius: 8px;
-    padding: 8px;
+    padding: 4px;
 }
 
-/* #first-box{
-    margin: 12px 12px 12px 0;
-} */
-
-.box{
-    display:flex;
-    /* margin: 12px 12px 12px 0; */
-    justify-content: space-between;
+/* breakpoints */
+@media (max-width: 992px) {
+    .header{
+        padding: 1.2rem 4%;
+    }
 }
 
-#right-column{
-    padding-left: 12px;
-}
+@media (max-width: 768px) {
+    #menu-icon{
+        display: block;
+    }
 
-#left-column{
-    padding-right: 12px;
-}
+    #navbar{
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: .5rem 4%;
+        background: rgba(255, 255, 255, .1);
+        border-bottom: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(5px);
 
-#tco-box{
-    background-color:darkgray;
-    border-radius: 8px;
-    color: #000;
-    padding: 18px;
-}
+        display: none;
+    }
 
-.box small{
-    font-size: 12px;
-}
+    .navbar a{
+        display: block;
+        margin: 1.5rem 0;
+    }
 
-.box-column{
-    padding: 12px;
+    #navbar a{
+        display: block;
+        margin: 1.5rem 0;
+    }
 }
-
-.dropdown-box{
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px 12px;
-}
-
-.title{
-    color: #666;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.graph-box{
-    border: 1px solid #666;
-    border-radius: 8px;
-    padding: 12px;
-}
-  
-
-.dropdown-container {
-    display: inline-block;
-    border: 1px solid #ccc; /* Border around the dropdown */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px;
-    width: 200px; /* Adjust width as needed */
-    font-family: Arial, sans-serif;
-  }
-  
-  .dropdown-label {
-    display: block;
-    font-size: 14px;
-    color: #666; /* Light grey for the label */
-    margin-bottom: 5px;
-  }
-  
-  .dropdown-select {
-    width: 100%; /* Full width of the container */
-    border: none; /* Remove border of the select */
-    font-weight: bold; /* Bold for selected text */
-    color: black; /* Text color */
-    background: none; /* Transparent background */
-    appearance: none; /* Remove default dropdown styles */
-    outline: none; /* Remove focus outline */
-    cursor: pointer; /* Pointer cursor on hover */
-  }
-  
-  .dropdown-select:focus {
-    outline: 2px solid #007bff; /* Add focus style */
-  }
-  
-  .dropdown-container::after {
-    content: '▼'; /* Down arrow */
-    position: absolute;
-    right: 15px; /* Adjust to align with the dropdown */
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none; /* Prevent interaction */
-    color: #666; /* Light grey for arrow */
-  }
