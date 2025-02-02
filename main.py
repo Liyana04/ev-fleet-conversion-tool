@@ -15,7 +15,7 @@ class Item(BaseModel):
 
 @app.get("/")
 async def name(request: Request):
-    return templates.TemplateResponse("home.html",{"request": request, "name": "ev fleet conversion tool"})
+    return templates.TemplateResponse("home.html",{"request": request, "title": "Ev fleet conversion tool"})
 # def read_root():
 #     return {"Hello": "World"}
 
