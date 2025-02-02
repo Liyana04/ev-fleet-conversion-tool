@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.7);
+  background-image: url("/static/video/car-bg.gif");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.header #main-header{
+    margin-top: 10rem;
+}
+
+.header p {
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  padding-bottom: 2rem;
+}
+
+.header #button-header {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.header #button-header:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+#navbar {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+#navbar #logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+#navbar a:hover {
+  color: #007bff;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.box{
+  display:flex;
+  /* background-color: #007bff; */
+  /* margin: 12px 12px 12px 0; */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  #navbar ul {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  #navbar ul.active {
+    display: flex;
+    }
+
+  #navbar li {
+    margin: 0;
+  }
+
+  #navbar a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #navbar #logo {
+    font-size: 1.2rem;
+  }
+
+  #navbar a {
+    font-size: 1rem;
+  }
+}
