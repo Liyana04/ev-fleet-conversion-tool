@@ -19,6 +19,7 @@ class Item(BaseModel):
 async def name(request: Request):
     return templates.TemplateResponse("home.html",{"request": request, "title": "TCO tool"})
 
+@app.get("/tco-tool")
 async def name(request: Request):
     return templates.TemplateResponse("form.html",{"request": request, "title": "TCO tool"})
 
