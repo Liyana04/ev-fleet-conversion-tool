@@ -19,9 +19,13 @@ class Item(BaseModel):
 async def name(request: Request):
     return templates.TemplateResponse("home.html",{"request": request, "title": "TCO tool"})
 
-@app.get("/tco-tool")
+@app.get("/about")
 async def name(request: Request):
-    return templates.TemplateResponse("form.html",{"request": request, "title": "TCO tool"})
+    return templates.TemplateResponse("about.html",{"request": request, "title": "TCO tool"})
+
+@app.get("/tco-form")
+async def name(request: Request):
+    return templates.TemplateResponse("tco-tool.html",{"request": request, "title": "TCO tool"})
 
 # def read_root():
 #     return {"Hello": "World"}
