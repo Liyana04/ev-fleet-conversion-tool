@@ -18,18 +18,24 @@
 
 </head>
 <body>
-  <header>
+  <header class="header">
       <nav id="navbar">
-        <div class="container"></div>
-          <div id="logo">{{title}} </div>
-          <div class="navbar-item">
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <div id="beta-logo"> <sub></sub>Beta version</div>
-            <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/about">About</a></li>
-            </ul>
+        <!-- <div class="container"> -->
+          <div class="navbar-logo">
+            <div id="logo">{{title}} </div>
+            <div id="beta-logo">Beta version</div>
           </div>
+          <div class="navbar-item">
+            <div>
+              <i class='bx bx-menu' id="menu-icon"></i>
+            </div>
+            <div>
+              <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about">About</a></li>
+              </ul>
+            </div>
+          <!-- </div> -->
         </div>
       </nav>
     
@@ -49,5 +55,12 @@
           </div>
         </div>
   </header>
+  <footer class="footer">
+    <p>© <span id="year"></span> Nur Liyana</p>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
