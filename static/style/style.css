@@ -56,44 +56,15 @@
   padding: 2rem;
 }
 
-#navbar {
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  /* transparent is here*/
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 2rem;
-}
-
-#navbar #logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-#navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-#navbar li {
-  display: inline-block;
-}
-
-#navbar a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-
-#navbar a:hover {
-  color: #007bff;
+  -webkit-backdrop-filter: blur(5px);
+  /* transparent is here*/
 }
 
 #menu-icon {
