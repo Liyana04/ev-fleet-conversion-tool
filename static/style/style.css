@@ -5,3 +5,14 @@
   margin: 0;
   padding: 0;
 }
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  background-image: url("/static/video/car-bg.gif");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+}
