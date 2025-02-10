@@ -159,6 +159,8 @@ footer{
   border-radius: 8px;
   margin-left: 12px;
   font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 /* responsive screen */
