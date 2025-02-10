@@ -112,10 +112,10 @@ footer{
   justify-content: space-around;
 }
 
-#logo a{
+#logo{
   font-size: 1.5rem;
   font-weight: bold;
-  color:#fff;
+  color:#b6b5b5;
 }
 
 #navbar ul {
