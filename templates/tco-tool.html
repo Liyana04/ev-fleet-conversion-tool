@@ -10,19 +10,251 @@
 <body>
   <header>
     <nav id="navbar">
-        <div id="logo">{{title}} </div>
-        <!-- <div id="beta-logo"> <sub></sub>Beta version</div> -->
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-      </nav>
+      <!-- <div class="container"> -->
+        <div class="navbar-logo">
+          <div id="logo"><a href="/">{{title}}</a></div>
+          <div id="beta-logo">Beta version</div>
+        </div>
+        <div class="navbar-item">
+          <div>
+            <i class='bx bx-menu' id="menu-icon"></i>
+          </div>
+          <div>
+            <ul>
+              <!-- <li><a href="/index.html">Home</a></li> -->
+              <li><a href="/about">About</a></li>
+            </ul>
+          </div>
+        <!-- </div> -->
+      </div>
+    </nav>
 </header>
-<section>
+<section class="tco-form">
   <div class="container">
-    <div>
+    <div class="box">
+      <div id="left-column"><!-- left column screen -->
+        <div><!--for first box-->
+          <label for="customRange1" class="form-label">Annual driving distance</label>
+          <input type="range" class="form-range" id="customRange1"> 10000 km/year
+  
+          <div class="dropdown-box">
+            Vehicle Type <i class="ri-arrow-down-s-fill"></i>
+          </div>
+  
+          <div class="">
+            Fuel-powertrain <i class="ri-information-line text-primary"  data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
+          </div>
+               
+          <div class="box">
+            <div class="dropdown-box">
+              Vehicle 1 <i class="ri-arrow-down-s-fill"></i>
+            </div>
+            <div class="dropdown-box">
+              Vehicle 2 <i class="ri-arrow-down-s-fill"></i>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div id="purchase-cost"><!-- purchase cost -->
+           <div >
+            Purchase cost <i class="ri-information-line text-primary"  data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
+          </div>
 
+          <div class="box">
+            <div class="box-column">
+              <small class="title">Battery electric</small>
+  
+              <div>
+                <label>Total vehicle cost</label>
+                <input type="text" placeholder="RM1234567">
+              </div>
+              
+              <div>
+                <label>Vehicle cost before taxes</label>
+                <input type="text" placeholder="RM1234567">
+              </div>
+  
+              <div>
+                <label>Import tax</label>
+                <input type="range" class="form-range" id="customRange1"> 0%
+              </div>
+  
+              <div>
+                <label>Registration tax</label>
+                <input type="range" class="form-range" id="customRange1"> 5%
+              </div>
+  
+              <div>
+                <label>CO<sub>2</sub> and other taxes</label>
+                <input type="range" class="form-range" id="customRange1"> 5%
+              </div>
+  
+              <div>
+                <label>Residual value</label>
+                <input type="range" class="form-range" id="customRange1"> RM1500
+              </div>
+  
+              <div>
+                <label>Home charging installation</label>
+                <input type="range" class="form-range" id="customRange1"> RM 120
+              </div>
+            </div>
+  
+            <div class="box-column">
+              <small class="title">Petrol</small>
+  
+              <div>
+                <label>Total vehicle cost</label>
+                <input type="text" placeholder="RM1234567">
+              </div>
+              
+              <div>
+                <label>Vehicle cost before taxes</label>
+                <input type="text" placeholder="RM1234567">
+              </div>
+  
+              <div>
+                <label>Import tax</label>
+                <input type="range" class="form-range" id="customRange1"> 0%
+              </div>
+  
+              <div>
+                <label>Registration tax</label>
+                <input type="range" class="form-range" id="customRange1"> 5%
+              </div>
+  
+              <div>
+                <label>CO<sub>2</sub> and other taxes</label>
+                <input type="range" class="form-range" id="customRange1"> 5%
+              </div>
+  
+              <div>
+                <label>Residual value</label>
+                <input type="range" class="form-range" id="customRange1"> RM1500
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div id="operating-cost">
+            <!-- Operating cost here -->
+          <div class="">
+            Operating costs <i class="ri-information-line text-primary"  data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
+          </div>
+
+          <div class="box">
+            <div class="box-column">
+              <small class="title">Battery electric</small>
+  
+              <div>
+                <label>Annual registration fee</label>
+                <input type="range" class="form-range" id="customRange1"> RM150
+              </div>
+              
+              <div>
+                <label>Roadtax</label>
+                <input type="text" placeholder="RM167">
+              </div>
+  
+              <div>
+                <label>Insurance per year</label>
+                <input type="range" class="form-range" id="customRange1"> RM 500
+              </div>
+  
+              <div>
+                <label>Maintennace per year</label>
+                <input type="range" class="form-range" id="customRange1"> RM 50
+              </div>
+  
+              <div>
+                <label>Electricity fuel efficiency</label>
+                <input type="range" class="form-range" id="customRange1"> 14.00kWh/100km
+              </div>
+  
+            </div>
+  
+            <div class="box-column">
+              <small class="title">Petrol</small>
+  
+              <div>
+                <label>Annual registration fee</label>
+                <input type="range" class="form-range" id="customRange1"> RM150
+              </div>
+              
+              <div>
+                <label>Roadtax</label>
+                <input type="text" placeholder="RM167">
+              </div>
+  
+              <div>
+                <label>Insurance per year</label>
+                <input type="range" class="form-range" id="customRange1"> RM 50
+              </div>
+  
+              <div>
+                <label>Maintennace per year</label>
+                <input type="range" class="form-range" id="customRange1"> RM 500
+              </div>
+  
+              <div>
+                <label>Fuel efficiency</label>
+                <input type="range" class="form-range" id="customRange1"> 6.50L/100km
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right-column"><!-- right column screen -->
+        <div id="result-box">
+          <div id="tco-box">
+            Estimated cost of ownership box
+            <hr>
+            <div class="box">
+              <div>
+                <small>Battery electric TCO</small>
+                <div>
+                  RM 150/km
+                </div>
+                <div>
+                  RM 100/year
+                </div>
+              </div>
+  
+              <div>
+                <small>Petrol TCO</small>
+                <div>
+                  RM 107/km
+                </div>
+                <div>
+                  RM 1000/year
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="box">
+            <div>
+              Cumulative cost
+            </div>
+            <div>
+              Breakdown of TCO
+            </div>
+          </div>
+  
+          <div id="cumulative">
+            Cumulative annual owning and operational costs
+            <div class="graph-box">
+              <img src="https://www.jaspersoft.com/content/dam/jaspersoft/images/graphics/infographics/line-chart-example.svg" alt="line graph">
+            </div>
+          </div>
+
+          <div id="breakdown" style="display:none">
+            breakdown TCO kjksdj
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
