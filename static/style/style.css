@@ -232,7 +232,7 @@ footer{
 .graph-box img{
   width: 100%;
 }
-
+ 
 /* responsive screen */
 @media screen and (max-width: 768px) {
   #menu-icon {
