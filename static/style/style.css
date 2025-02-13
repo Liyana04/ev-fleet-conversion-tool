@@ -196,7 +196,12 @@ footer{
 }
 
 /* tco form page*/
-
+.box{
+  display:flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
 
 /* responsive screen */
 @media screen and (max-width: 768px) {
