@@ -146,6 +146,11 @@ footer{
   /* flex: 1; */
 }
 
+.no-border-question{
+  display: flex;
+  flex-direction: column;
+}
+
 .container-box{
   display: flex;
   flex-direction: column; /* Stack divs vertically */
