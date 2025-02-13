@@ -197,7 +197,7 @@ footer{
 
 /* tco form page*/
 .tco-form{
-  height: 100vh;
+  font-size: 14px;
 }
 
 .box{
@@ -214,6 +214,7 @@ footer{
   flex: 1; /* Makes both divs equal width */
   display: flex;
   flex-direction: column;
+  gap: 12px;
   margin-bottom: 4px;
 }
 
