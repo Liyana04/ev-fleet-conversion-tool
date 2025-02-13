@@ -199,6 +199,12 @@ footer{
 .box{
   display:flex;
   justify-content: space-between;
+  width: 100%;
+}
+
+.box{
+  display:flex;
+  justify-content: space-between;
   gap: 20px;
   width: 100%;
 }
