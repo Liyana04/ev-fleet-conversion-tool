@@ -214,6 +214,7 @@ footer{
   flex: 1; /* Makes both divs equal width */
   display: flex;
   flex-direction: column;
+  margin-bottom: 4px;
 }
 
 #tco-box{
@@ -231,6 +232,14 @@ footer{
 
 .graph-box img{
   width: 100%;
+}
+
+.question{
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  border: 1px solid #9e9e9e;
+  border-radius: 8px;
 }
 
 /* responsive screen */
