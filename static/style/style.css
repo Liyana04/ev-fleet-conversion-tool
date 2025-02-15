@@ -175,6 +175,7 @@ footer{
 .about-container{
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .about-card{
@@ -199,8 +200,16 @@ footer{
 /* responsive screen */
 @media screen and (max-width: 768px) {
 
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
 
-  
+  .about-card{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
