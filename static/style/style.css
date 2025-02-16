@@ -175,7 +175,6 @@ footer{
 .about-container{
   display: flex;
   gap: 12px;
-  /* flex-wrap: wrap; */
 }
 
 .about-card{
