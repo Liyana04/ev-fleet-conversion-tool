@@ -175,7 +175,7 @@ footer{
 .about-container{
   display: flex;
   gap: 12px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .about-card{
@@ -205,7 +205,15 @@ footer{
     font-size: 10px;
     letter-spacing: none;
   }
-  
+
+  #logo{
+    font-size: 12px;
+    font-weight: bold;
+    color:#b6b5b5;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .about-container{
     display: flex;
     flex-direction: column;
@@ -216,14 +224,4 @@ footer{
   .about-card{
     width: 100%;
   }
-
-  #logo{
-    font-size: 12px;
-    font-weight: bold;
-    color:#b6b5b5;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  
 }
