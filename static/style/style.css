@@ -218,7 +218,7 @@ footer{
     flex-direction: column;
     gap: 12px;
     flex-wrap: wrap;
-  }
+  } 
 
   .about-card{
     width: 100%;
