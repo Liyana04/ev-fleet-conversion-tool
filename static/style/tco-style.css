@@ -218,6 +218,15 @@ footer{
     font-weight: bold;
     color:#b6b5b5;
   }
+
+  .box{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    /* flex: 1; */
+  }
   
 }
 
