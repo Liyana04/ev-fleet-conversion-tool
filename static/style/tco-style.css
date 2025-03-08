@@ -207,6 +207,11 @@ footer{
 
 /* responsive screen */
 @media screen and (max-width: 768px) {
+
+  #navbar {           
+    width: 100%;
+  }
+
   #beta-logo{
     padding: 4px;
     font-size: 10px;
