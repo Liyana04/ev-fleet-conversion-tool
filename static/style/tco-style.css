@@ -146,6 +146,10 @@ footer{
   /* flex: 1; */
 }
 
+#toggle-screen{
+  background-color: orange;
+}
+
 .no-border-question{
   display: flex;
   flex-direction: column;
@@ -231,6 +235,10 @@ footer{
     width: 100%;
     gap: 20px;
     /* flex: 1; */
+  }
+
+  #toggle-screen{
+    background-color: orange;
   }
   
 }
