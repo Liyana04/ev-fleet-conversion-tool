@@ -220,6 +220,24 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: rgba(13, 57, 201, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
 /* responsive screen */
 @media screen and (max-width: 768px) {
 
