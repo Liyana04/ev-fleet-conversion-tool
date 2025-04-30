@@ -36,19 +36,26 @@
         <form action="/submitform" method="post" enctype="multipart/form-data">
           <input type="text" name="assignment">
           <!-- <input type="file" name="assignment_file"> -->
-          <h2>LOOK HERE {{assignment}}</h2>
-          <input type="submit">
+          <!-- <h2>LOOK HERE {{assignment}}</h2> -->
+          <button type="submit">Calculate TCO</button>
+          <!-- <input type="submit"> -->
         </form>
           <div class="container-box">
             <div class="no-border-question">
               <label for="customRange1" class="form-label">Annual driving distance</label>
               <!-- <input type="range" class="form-range" id="customRange1"> 10000 km/year   -->
-              <input type="text" id="customRange1" placeholder="RM 10000 km/year">
+              <input type="text" name="annual_dist" id="annual_dist" placeholder="RM 10000 km/year">
             </div>
 
             <div class="dropdown-box">
-              Vehicle Type
-              <p>Medium car</p> <i class="ri-arrow-down-s-fill"></i>
+              <label for="vehicle_type">Vehicle Type</label>
+              <select name="pets" id="pet-select">
+                <option value="">--Please choose an option--</option>
+                <option value="medium_car">Medium car</option>
+                <option value="sedan_car">Sedan car</option>
+                <option value="hatchback">Hatchback</option>
+              </select>
+              <!-- <i class="ri-arrow-down-s-fill"></i> -->
             </div>
     
             <div class="title">
