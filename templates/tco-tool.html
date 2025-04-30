@@ -33,13 +33,8 @@
   <div class="container">
     <div class="box">
       <div id="left-column">
+
         <form action="/submitform" method="post" enctype="multipart/form-data">
-          <input type="text" name="assignment">
-          <!-- <input type="file" name="assignment_file"> -->
-          <!-- <h2>LOOK HERE {{assignment}}</h2> -->
-          <button type="submit">Calculate TCO</button>
-          <!-- <input type="submit"> -->
-        </form>
           <div class="container-box">
             <div class="no-border-question">
               <label for="customRange1" class="form-label">Annual driving distance</label>
@@ -74,8 +69,8 @@
 
           </div>
           <div id="purchase-cost">
-            <div >
-              Purchase cost <i class="ri-information-line text-primary"  data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
+            <div>
+              Purchase cost <i class="ri-information-line text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="This is some helpful information!"></i>
             </div>
 
             <div class="box">
@@ -94,31 +89,31 @@
       
                   <div class="question">
                     <label>Import tax</label>
-                    <input type="text" id="customRange1" placeholder="0%">
+                    <input type="text" id="battery_import_tax" name="battery_import_tax" placeholder="0%">
                     <!-- <input type="range" class="form-range" id="customRange1"> 0% -->
                   </div>
       
                   <div class="question">
                     <label>Registration tax</label>
-                    <input type="text" id="customRange1" placeholder="5%">
+                    <input type="text" id="reg_tax" name="reg_tax" placeholder="5%">
                     <!-- <input type="range" class="form-range" id="customRange1"> 5% -->
                   </div>
       
                   <div class="question">
                     <label>CO<sub>2</sub> and other taxes</label>
-                    <input type="text" id="customRange1" placeholder="5%">
+                    <input type="text" id="etc_taxes" name="etc_taxes" placeholder="5%">
                     <!-- <input type="range" class="form-range" id="customRange1"> 5% -->
                   </div>
       
                   <div class="question">
                     <label>Residual value</label>
-                    <input type="text" id="customRange1" placeholder="RM 1500">
+                    <input type="text" id="residual_val" name="residual_val" placeholder="RM 1500">
                     <!-- <input type="range" class="form-range" id="customRange1"> RM1500 -->
                   </div>
       
                   <div class="question">
                     <label>Home charging installation</label>
-                    <input type="text" id="customRange1" placeholder="RM 120">
+                    <input type="text" id="home_charge_installation" name="home_charge_installation" placeholder="RM 120">
                     <!-- <input type="range" class="form-range" id="customRange1"> RM 120 -->
                   </div>
                 </div>
@@ -128,35 +123,35 @@
       
                   <div class="question">
                     <label>Total vehicle cost</label>
-                    <input type="text" id="petrol_cost_before_tax" name="petrol_cost_before_tax" placeholder="RM 123..">
+                    <input type="text" id="vehicle_cost" name="vehicle_cost" placeholder="RM 123..">
                   </div>
                   
                   <div class="question">
                     <label>Vehicle cost before taxes</label>
-                    <input type="text" id="petrol_cost_before_tax" name="petrol_cost_before_tax" placeholder="RM 123..">
+                    <input type="text" id="vehicle_cost_before_tax" name="vehicle_cost_before_tax" placeholder="RM 123..">
                   </div>
       
                   <div class="question">
                     <label>Import tax</label>
-                    <input type="text" id="customRange1" placeholder="0%">
+                    <input type="text" id="petrol_import_Tax" name="petrol_import_tax" placeholder="0%">
                     <!-- <input type="range" class="form-range" id="customRange1"> 0% -->
                   </div>
       
                   <div class="question">
                     <label>Registration tax</label>
-                    <input type="text" id="customRange1" placeholder="5%">
+                    <input type="text" id="petrol_regis_tax" name="petrol_regis_tax" placeholder="5%">
                     <!-- <input type="range" class="form-range" id="customRange1"> 5% -->
                   </div>
       
                   <div class="question">
                     <label>CO<sub>2</sub> and other taxes</label>
-                    <input type="text" id="customRange1" placeholder="5%">
+                    <input type="text" id="petrol_etc_tax" name="petrol_etc_tax" placeholder="5%">
                     <!-- <input type="range" class="form-range" id="customRange1"> 5% -->
                   </div>
       
                   <div class="question">
                     <label>Residual value</label>
-                    <input type="text" id="customRange1" placeholder="RM 1500">
+                    <input type="text" id="petrol_residual_val" name="petrol_residual_val" placeholder="RM 1500">
                     <!-- <input type="range" class="form-range" id="customRange1"> RM1500 -->
                   </div>
 
@@ -176,31 +171,31 @@
       
                   <div class="question">
                     <label>Annual registration fee</label>
-                    <input type="text" id="customRange1" placeholder="RM 150">
+                    <input type="text" id="battery_annual_fee" name="battery_annual_fee placeholder="RM 150">
                     <!-- <input type="range" class="form-range" id="customRange1"> RM150 -->
                   </div>
                   
                   <div class="question">
                     <label>Roadtax</label>
-                    <input type="text" id="customRange1" placeholder="RM 123">
+                    <input type="text" id="battery_roadtax" name="battery_roadtax" placeholder="RM 123">
                     <!-- <input type="text" id="roadtax" name="roadtax" placeholder="RM 123.."> -->
                   </div>
       
                   <div class="question">
                     <label>Insurance per year</label>
-                    <input type="text" id="customRange1" placeholder="RM 500">
+                    <input type="text" id="battery_insurance" name="battery_insurance" placeholder="RM 500">
                     <!-- <input type="range" class="form-range" id="customRange1"> RM 500 -->
                   </div>
       
                   <div class="question">
                     <label>Maintennace per year</label>
-                    <input type="text" id="customRange1" placeholder="RM 50">
+                    <input type="text" id="battery_maintenance" name="battery_maintenance" placeholder="RM 50">
                     <!-- <input type="range" class="form-range" id="customRange1"> RM 50 -->
                   </div>
       
                   <div class="question">
                     <label>Electricity fuel efficiency</label>
-                    <input type="text" id="customRange1" placeholder="14.00kWh/100km">
+                    <input type="text" id="battery_electricity_fuel" name="battery_electricity_fuel" placeholder="14.00kWh/100km">
                     <!-- <input type="range" class="form-range" id="customRange1"> 14.00kWh/100km -->
                   </div>
       
@@ -211,23 +206,23 @@
       
                   <div class="question">
                     <label>Annual registration fee</label>
-                    <input type="text" id="customRange1" placeholder="RM 150">
+                    <input type="text" id="petrol_annual_reg" name="petrol_annual_reg" placeholder="RM 150">
                     <!-- <input type="range" class="form-range" id="customRange1"> RM150 -->
                   </div>
                   
                   <div class="question">
                     <label>Roadtax</label>
-                    <input type="text" placeholder="RM167">
+                    <input type="text" id="petrol_roadtax" name="petrol_roadtax" placeholder="RM 167">
                   </div>
       
                   <div class="question">
                     <label>Insurance per year</label>
-                    <input type="text" id="customRange1" placeholder="RM 50">
+                    <input type="text" id="petrol_insurance" name="petrol_insurance" placeholder="RM 50">
                     <!-- <input type="range" class="form-range" id="customRange1"> RM 50 -->
                   </div>
       
                   <div class="question">
-                    <label>Maintennace per year</label>
+                    <label>Maintenace per year</label>
                     <input type="text" id="customRange1" placeholder="RM 500">
                     <!-- <input type="range" class="form-range" id="customRange1"> RM 500 -->
                   </div>
@@ -246,6 +241,8 @@
                 </div>
               </div>
             </div>
+            <button type="submit">Calculate TCO</button>
+          </form>
         <!-- </form> -->
       </div>
 
@@ -253,7 +250,7 @@
           <div id="tco-box">
             Estimated cost of ownership box
             <hr>
-            <div>
+            <div class="container-box">
               <div>
                 <small>Battery electric TCO</small>
                 <div>
