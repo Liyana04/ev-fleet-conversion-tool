@@ -33,7 +33,12 @@
   <div class="container">
     <div class="box">
       <div id="left-column">
-        <form action="">
+        <form action="/submitform" method="post" enctype="multipart/form-data">
+          <input type="text" name="assignment">
+          <!-- <input type="file" name="assignment_file"> -->
+          <h2>LOOK HERE {{assignment}}</h2>
+          <input type="submit">
+        </form>
           <div class="container-box">
             <div class="no-border-question">
               <label for="customRange1" class="form-label">Annual driving distance</label>
@@ -226,14 +231,15 @@
                     <!-- <input type="range" class="form-range" id="customRange1"> 6.50L/100km -->
                   </div>
 
-                  <button>
+                  <!-- <input type="submit"> -->
+                  <!-- <button>
                     Calculate TCO
-                  </button>
+                  </button> -->
                   
                 </div>
               </div>
             </div>
-        </form>
+        <!-- </form> -->
       </div>
 
       <div id="right-column">
